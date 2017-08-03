@@ -1,0 +1,26 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+#capture-button {
+	padding: 1em;
+	background: rgb(0, 217, 255);
+	border: 1px solid grey;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.25s;
+}
+
+#capture-button:hover {
+	background: rgba(0, 217, 255, 0.6);
+}
+
+.meterLabel {
+	width: 100px;
+	display: inline-block;
+}
+
+meter {
+	width: 300px;
+}

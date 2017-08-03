@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="/style.css" rel="stylesheet" type="text/css" />
+	<title>Emotions API Demo</title>
+</head>
+
+<body>
+	<video width="400" height="300" autoplay></video>
+	<canvas id="canvas" width="400" height="300"></canvas>
+
+	<br>
+
+	<p id="capture-button">Analyse</p>
+	<br/>
+
+	<span class="meterLabel">Anger</span>
+	<meter value="0" min="0" max="1" class="anger"></meter>
+	<br/>
+	<span class="meterLabel">Contempt</span>
+	<meter value="0" min="0" max="1" class="contempt"></meter>
+	<br/>
+	<span class="meterLabel">Disgust</span>
+	<meter value="0" min="0" max="1" class="disgust"></meter>
+	<br/>
+	<span class="meterLabel">Fear</span>
+	<meter value="0" min="0" max="1" class="fear"></meter>
+	<br/>
+	<span class="meterLabel">Happiness</span>
+	<meter value="0" min="0" max="1" class="happiness"></meter>
+	<br/>
+	<span class="meterLabel">Neutral</span>
+	<meter value="0" min="0" max="1" class="neutral"></meter>
+	<br/>
+	<span class="meterLabel">Sadness</span>
+	<meter value="0" min="0" max="1" class="sadness"></meter>
+	<br/>
+	<span class="meterLabel">Surprise</span>
+	<meter value="0" min="0" max="1" class="surprise"></meter>
+	<br/>
+
+	<code class="debug">
+
+	</code>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="/script.js"></script>
+</body>
+
+</html>
