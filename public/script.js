@@ -21,7 +21,6 @@ if (navigator.getUserMedia) {
 				context.clearRect(0, 0, canvas.width, canvas.height);
 				context.drawImage(video, 20, 20, 600, 450, 0, 0, 400, 300);
 				dataURL = canvas.toDataURL("image/png");
-				updateEmotions();
 				debug.text('');
 				$(canvas).css('opacity', 0.3);
 
@@ -48,6 +47,8 @@ if (navigator.getUserMedia) {
 							context.stroke();
 
 							updateEmotions(result[0].scores);
+						} else {
+							updateEmotions();
 						}
 
 						//code to show result will be here
